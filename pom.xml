@@ -13,7 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  <repositories>
+  	<repository>
+  		<id>Mulesoft repository</id>
+  		<url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+  	</repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -26,6 +31,11 @@
       <artifactId>commons-collections</artifactId>
       <version>3.2.2</version>
 </dependency>
+    <dependency>
+	    <groupId>com.github.frohoff</groupId>
+	    <artifactId>ysoserial</artifactId>
+	    <version>0.0.5</version>
+	</dependency>
     
   </dependencies>
 </project>
